@@ -61,7 +61,13 @@ function App() {
   return (
     <AuthProvider>
       <RouterProvider router={router} />
-      <ToastContainer />
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        closeOnClick
+        pauseOnHover
+        theme="light"
+      />
     </AuthProvider>
   );
 }
